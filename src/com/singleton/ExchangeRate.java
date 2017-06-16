@@ -11,9 +11,8 @@ public class ExchangeRate {
     BigDecimal buyPrice;
 
 
-
     BigDecimal sellPrice;
-   HashMap rates;
+
 
 
     public ExchangeRate() {
@@ -24,6 +23,16 @@ public class ExchangeRate {
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
     }
+
+
+    public void setBuyPrice(BigDecimal buyPrice) {
+        this.buyPrice = buyPrice;
+    }
+
+    public void setSellPrice(BigDecimal sellPrice) {
+        this.sellPrice = sellPrice;
+    }
+
     public BigDecimal getBuyPrice() {
         return buyPrice;
     }
@@ -32,10 +41,7 @@ public class ExchangeRate {
         return sellPrice;
     }
 
-    public Map createMap() {
 
-        return rates;
-    }
 
 
 }

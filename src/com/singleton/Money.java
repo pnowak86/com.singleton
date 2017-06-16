@@ -9,9 +9,6 @@ public class Money {
 
 
     BigDecimal amount;
-
-
-
     String currency;
 
 
@@ -41,8 +38,9 @@ public class Money {
     }
 
     public void moneyPrinter(){
-        System.out.println(getAmount());
-        System.out.println(getCurrency());
+        System.out.println("For this amount you can get: " + getAmount() +" "+ getCurrency() );
+        System.out.println("---------------------------------------------------------");
+        System.out.println("");
     }
 
 }
